@@ -1,0 +1,120 @@
+body {
+     margin: 0;
+     background-color: rgb(75, 193, 85);
+}
+.container {
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "navigation navigation"
+    "sidebar maincontent"
+    "footer footer";
+    grid-template-columns: 100px auto;
+    border: 2px solid antiquewhite;
+    border-radius: 5px;
+}    
+.head {
+    font-size: 30px;
+    padding-top: 5px;
+    grid-area: header;
+    background-color: rgb(67, 152, 67);
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px red;
+    height: 60px;
+}
+.navigation {
+    height: 40px;
+    grid-area: navigation;
+    background-color: rgb(85, 77, 77);
+    text-align: left;
+    color: white;
+    padding-left: 2px;
+    font-size: medium;
+}
+.side-bar {
+    text-shadow: 2px 2px rgb(143, 136, 136);
+    text-align: center;
+    height: 90vh;
+    grid-area: sidebar;
+    background-color: rgb(46, 45, 45);
+    width: 100px;
+    color: white;
+    overflow-y: auto;
+}
+.content {
+    overflow-x: auto;
+    text-shadow: 2px 2px gray;
+    height: 90vh;
+    width: 100%;
+    grid-area: maincontent;
+    background-color: skyblue;
+}
+.foot {
+    margin-top: 10px;
+    width: 60%;
+    margin-left: 20%;
+    margin-left: 20%;
+    height: 40px;
+    border-radius: 10px;
+    grid-area: footer;
+    background-color: skyblue;
+    text-align: center;
+}
+.link {
+    display: flex;
+    text-shadow: 2px 2px red;
+    justify-content: space-evenly;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+#nav {
+    background-color: white;
+    width: 70px;
+    border-radius: 5px;
+    background-color: rgb(251, 254, 254);
+    text-shadow: 2px 2px red;
+}
+.side-bar-links {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-shadow: 2px 2px rgb(66, 65, 65);
+}
+.link1:hover{
+    text-shadow: 2px 2px rgb(207, 14, 14);
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.trigger {
+    padding: 10px;
+    cursor: wait;
+}
+
+.dropdown-content {
+    position: absolute;
+    display: none;
+}
+
+.dropdown:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
+}
+img {
+    color: white;
+    width: 25%;
+    height: 25%;
+    border-radius: 300px;
+    float: left;
+}
+.picture2 {
+    background-image: url('derrick.jpg');
+}
+
